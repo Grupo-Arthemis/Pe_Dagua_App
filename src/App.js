@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Header from './components/Header/Header';  
@@ -15,7 +15,7 @@ function App() {
     <Router>
       <Header />
       <Switch>
-        <Route exact path="/pe-dagua-next/Home" component={Home} />
+        <Route exact path="/pe-dagua-next/#/Home" component={Home} />
         <Route path="/pe-dagua-next/Apoio" component={Apoio} />
         <Route path="/pe-dagua-next/Login" component={Login} />
         <Route path="/pe-dagua-next/Cadastro" component={Cadastro} />
