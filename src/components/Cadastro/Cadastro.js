@@ -25,6 +25,7 @@ const CadastroSection01 = styled.div`
   background-color: #fff;
   align-items: center;
   position: relative;
+  overflow-x: hidden;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.50) 6.03%, rgba(101, 176, 231, 0.50) 33.18%, rgba(133, 70, 197, 0.17) 81.88%), #FFF;
 
     @media (max-width: 600px) {
