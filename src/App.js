@@ -15,10 +15,10 @@ function App() {
     <Router>
       <Header />
       <Switch>
-        <Route exact path="/pe-dagua-next/#/Home" component={Home} />
-        <Route path="/pe-dagua-next/Apoio" component={Apoio} />
-        <Route path="/pe-dagua-next/Login" component={Login} />
-        <Route path="/pe-dagua-next/Cadastro" component={Cadastro} />
+        <Route exact path="/#/" component={Home} />
+        <Route path="/Apoio" component={Apoio} />
+        <Route path="/Login" component={Login} />
+        <Route path="/Cadastro" component={Cadastro} />
       </Switch>
       <Footer />
     </Router>

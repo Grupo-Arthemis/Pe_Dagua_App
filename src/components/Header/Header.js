@@ -62,17 +62,17 @@ function Header() {
         </div>
         <nav className='header__menu'>
           <ul className='header__menu__lista'>
-            <li><Link01 to="/pe-dagua-next/#/Home" className={location.pathname === '/' ? 'ativo' : ''}>Home</Link01></li>
+            <li><Link01 to="/#/" className={location.pathname === '/' ? 'ativo' : ''}>Home</Link01></li>
             <li><Link01 to='/consulta' className={location.pathname === '/consulta' ? 'ativo' : ''}>Consulta</Link01></li>
-            <li><Link01 to='/pe-dagua-next/Apoio' className={location.pathname === '/apoio' ? 'ativo' : ''}>Apoio</Link01></li>
+            <li><Link01 to='/Apoio' className={location.pathname === '/apoio' ? 'ativo' : ''}>Apoio</Link01></li>
             <li><SobreDropdown /></li>
           </ul>
         </nav>
         <div className='header__login'>
-          <BotaoSecundario01 to="/pe-dagua-next/Login" style={{padding:"5px 16px"}}>
+          <BotaoSecundario01 to="/Login" style={{padding:"5px 16px"}}>
             Login 
           </BotaoSecundario01>
-          <BotaoPrimario01 to="/pe-dagua-next/Cadastro" style={{padding:"5px 16px"}}>
+          <BotaoPrimario01 to="/Cadastro" style={{padding:"5px 16px"}}>
             Cadastro
           </BotaoPrimario01>
         </div>
