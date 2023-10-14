@@ -48,3 +48,7 @@ Link{
 	text-decoration: none;
 	color: aliceblue;
 }
+
+a{
+	text-decoration: none !important;
+}
