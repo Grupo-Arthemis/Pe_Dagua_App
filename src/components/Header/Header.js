@@ -62,7 +62,7 @@ function Header() {
         </div>
         <nav className='header__menu'>
           <ul className='header__menu__lista'>
-            <li><Link01 to="/#/" className={location.pathname === '/' ? 'ativo' : ''}>Home</Link01></li>
+            <li><Link01 to="/" className={location.pathname === '/' ? 'ativo' : ''}>Home</Link01></li>
             <li><Link01 to='/consulta' className={location.pathname === '/consulta' ? 'ativo' : ''}>Consulta</Link01></li>
             <li><Link01 to='/Apoio' className={location.pathname === '/apoio' ? 'ativo' : ''}>Apoio</Link01></li>
             <li><SobreDropdown /></li>
