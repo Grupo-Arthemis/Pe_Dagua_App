@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/Pe_Dagua_App/static/css/main.a168d0df.css",
+    "main.js": "/Pe_Dagua_App/static/js/main.75c53095.js",
+    "static/js/787.cfdb8f9f.chunk.js": "/Pe_Dagua_App/static/js/787.cfdb8f9f.chunk.js",
+    "static/media/Fundo-Section-1.svg": "/Pe_Dagua_App/static/media/Fundo-Section-1.0c1f60732086d0ae869a224976d2e3e4.svg",
+    "static/media/Foto (6).jpg": "/Pe_Dagua_App/static/media/Foto (6).de87e03c6fb37419f227.jpg",
+    "static/media/Foto (3).jpg": "/Pe_Dagua_App/static/media/Foto (3).d746cfeea1fe2c7cafc7.jpg",
+    "static/media/Foto (1).jpg": "/Pe_Dagua_App/static/media/Foto (1).0175dd034be7b25b3a10.jpg",
+    "static/media/Foto (9).jpg": "/Pe_Dagua_App/static/media/Foto (9).77fdc30e5a9f9200be5e.jpg",
+    "static/media/Foto (5).jpg": "/Pe_Dagua_App/static/media/Foto (5).a76b34860820e3f8ca86.jpg",
+    "static/media/Foto (8).jpg": "/Pe_Dagua_App/static/media/Foto (8).a67a654f11e2396133da.jpg",
+    "static/media/Foto (2).jpg": "/Pe_Dagua_App/static/media/Foto (2).11dbb206e87e0b5b7681.jpg",
+    "static/media/Foto (10).jpg": "/Pe_Dagua_App/static/media/Foto (10).7e517f5c025ea7cb3111.jpg",
+    "static/media/Foto (7).jpg": "/Pe_Dagua_App/static/media/Foto (7).9d5304af75cf0fba76fa.jpg",
+    "static/media/Foto-Carrossel-1.jpg": "/Pe_Dagua_App/static/media/Foto-Carrossel-1.5b99997e24003da8932f.jpg",
+    "static/media/Foto-Carrossel-3.jpg": "/Pe_Dagua_App/static/media/Foto-Carrossel-3.49fdfa4439673c7f29dd.jpg",
+    "static/media/Foto-Carrossel-2.jpg": "/Pe_Dagua_App/static/media/Foto-Carrossel-2.39d20da40ae4fd22d324.jpg",
+    "static/media/Foto (4).jpg": "/Pe_Dagua_App/static/media/Foto (4).012c0a2e123afe057872.jpg",
+    "static/media/Garoto-Cadastro.png": "/Pe_Dagua_App/static/media/Garoto-Cadastro.1f41ff6928b439c62e16.png",
+    "static/media/Login-Garota.png": "/Pe_Dagua_App/static/media/Login-Garota.f439ddbc2212e46599cf.png",
+    "static/media/Garota-Cadastro.png": "/Pe_Dagua_App/static/media/Garota-Cadastro.d80c880682d1543cb6a2.png",
+    "index.html": "/Pe_Dagua_App/index.html",
+    "main.a168d0df.css.map": "/Pe_Dagua_App/static/css/main.a168d0df.css.map",
+    "main.75c53095.js.map": "/Pe_Dagua_App/static/js/main.75c53095.js.map",
+    "787.cfdb8f9f.chunk.js.map": "/Pe_Dagua_App/static/js/787.cfdb8f9f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a168d0df.css",
+    "static/js/main.75c53095.js"
+  ]
+}
