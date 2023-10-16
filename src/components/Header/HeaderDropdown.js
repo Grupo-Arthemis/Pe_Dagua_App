@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styled from "styled-components";
+import './Header.css';
 
 const Link01 = styled(Link)`
   color: #5d5a88;
@@ -14,6 +15,8 @@ function SobreDropdown() {
   const toggleDropdown = () => {
     setShowDropdown(!showDropdown);
   };
+
+  const location = useLocation();
 
   return (
     <div className="dropdown">
@@ -32,7 +35,7 @@ function SobreDropdown() {
       >
         <li className="dropdown-item">
 {/* eslint-disable-next-line no-restricted-globals */}
-            <Link01 to='/projeto'   className={location.pathname === '/projeto' ? 'ativo' : ''}>&nbsp; <i className='fas fa-angle-right'></i> Projeto</Link01>
+            <Link01 to='/Projeto'   className={location.pathname === '/Projeto' ? 'ativo' : ''}>&nbsp; <i className='fas fa-angle-right'></i> Projeto</Link01>
         </li >
         <li className="dropdown-item">
 {/* eslint-disable-next-line no-restricted-globals */}
@@ -40,7 +43,7 @@ function SobreDropdown() {
         </li >
         <li className="dropdown-item">
 {/* eslint-disable-next-line no-restricted-globals */}
-            <Link01 to='/perguntas' className={location.pathname === '/perguntas' ? 'ativo' : ''}>&nbsp; <i className='fas fa-angle-right'></i> Perguntas</Link01>
+            <Link01 to='/Perguntas' className={location.pathname === '/Perguntas' ? 'ativo' : ''}>&nbsp; <i className='fas fa-angle-right'></i> Perguntas</Link01>
         </li>
         <li className="dropdown-item">
 {/* eslint-disable-next-line no-restricted-globals */}

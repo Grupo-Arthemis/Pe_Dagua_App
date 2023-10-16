@@ -36,18 +36,6 @@ const ApoioSection01Texto = styled.div`
   flex-direction: column;
 `;
 
-const ApoioSection01P = styled.p`
-  color: #9795b5;
-  text-align: center;
-  font-feature-settings: 'clig' off, 'liga' off;
-  font-family: DM Sans;
-  font-size: clamp(0.75rem, 0.381rem + 0.985vw, 1.563rem);
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-align: justify;
-`;
-
 const ApoioSection01Cards = styled.div`
   display: flex;
   justify-content: center;
