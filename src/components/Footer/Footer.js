@@ -170,19 +170,22 @@ function Footer() {
             <FooterTextosTopicosTitulo>Sobre</FooterTextosTopicosTitulo>
           </FooterTextosTopicos>
           <FooterTextosTopicos>
-            <StyledLink to="/projeto">Sobre o projeto</StyledLink>
+            <StyledLink to="/Projeto">Sobre o projeto</StyledLink>
           </FooterTextosTopicos>
           <FooterTextosTopicos>
-            <StyledLink to="/grupo">Sobre nós</StyledLink>
+            <StyledLink to="/Grupo">Sobre o Grupo</StyledLink>
           </FooterTextosTopicos>
           <FooterTextosTopicos>
-            <StyledLink to="/perguntas">Perguntas frequentes</StyledLink>
+            <StyledLink to="/Perguntas">Perguntas frequentes</StyledLink>
           </FooterTextosTopicos>
           <FooterTextosTopicos>
-            <StyledLink to="/contatos">Contatos</StyledLink>
+            <StyledLink to="/Contatos">Contatos</StyledLink>
           </FooterTextosTopicos>
           <FooterTextosTopicos>
-            <StyledLink to="/apoio">Apoio</StyledLink>
+            <StyledLink to="/Apoio">Apoio</StyledLink>
+          </FooterTextosTopicos>
+          <FooterTextosTopicos>
+            <StyledLink to="/Planos">Planos</StyledLink>
           </FooterTextosTopicos>
         </FooterTextosColuna>
         <FooterTextosColuna>
