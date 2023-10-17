@@ -46,7 +46,7 @@ const Garota = styled.img`
     @media (max-width: 600px) {
         width: 200px;
         position: absolute;
-        bottom: 591%;
+        bottom: 574%;
         left: 65%;
         transform: translate(-50%, -50%);
     }

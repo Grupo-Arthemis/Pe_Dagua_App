@@ -152,7 +152,7 @@ function Home() {
       <HomeSection01>
         <HomeSection01Conteudo>
           <Titulo01 style={{ textAlign: "start" }}>
-            Um sistema de alerta de alagamentos e chuvas fortes
+            Um sistema de alerta de enchentes e chuvas fortes
           </Titulo01>
           <Paragrafo01 style={{ textAlign: "justify" }}>
             Mantenha-se seguro das águas. Sua fonte confiável para informações
