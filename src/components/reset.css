@@ -52,3 +52,11 @@ Link{
 a{
 	text-decoration: none !important;
 }
+
+.navbar-nav .nav-link.active{
+	color: #C38F40 !important;
+}
+
+.ativo{
+	color: #C38F40 !important;
+}

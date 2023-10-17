@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Logo from "../../assets/logo.png";
 import { useState } from 'react';
 
@@ -107,8 +107,8 @@ const Link01 = styled(Link)`
   font-family: DM Sans;
 `
 
-
 function OffcanvasExample() {
+    const location = useLocation();
     const [showOffcanvas, setShowOffcanvas] = useState(false);
   
     const handleCloseOffcanvas = () => {
@@ -118,6 +118,8 @@ function OffcanvasExample() {
     const handleToggleOffcanvas = () => {
       setShowOffcanvas(!showOffcanvas);
     };
+
+    const [activeItem, setActiveItem] = useState(null);
   
     return (
       <Navbar expand="sm" style={{ backgroundColor: '#fff' }}>
@@ -151,17 +153,23 @@ function OffcanvasExample() {
                 <NavDropdown
                   title="Sobre"
                   id="offcanvasNavbarDropdown"
+                  className={location.pathname === '/Projeto' || location.pathname === '/Grupo' ? 'ativo' : ''}
                 >
-                  <NavDropdown.Item href="#Projeto">
+                  <NavDropdown.Item href="#Projeto"
+                  className={location.pathname === '/Projeto' ? 'ativo' : ''}
+                  >
                     Sobre o Projeto
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#Grupo">
+                  <NavDropdown.Item href="#Grupo"
+                  className={location.pathname === '/Grupo' ? 'ativo' : ''}>
                     Sobre o Grupo
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#Contato">
+                  <NavDropdown.Item href="#Contato"
+                  className={location.pathname === '/Contato' ? 'ativo' : ''}>
                     Contato
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#Perguntas">
+                  <NavDropdown.Item href="#Perguntas"
+                  className={location.pathname === '/Perguntas' ? 'ativo' : ''}>
                     Perguntas Frequentes
                   </NavDropdown.Item>
                 </NavDropdown>
