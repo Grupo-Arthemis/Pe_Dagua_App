@@ -30,35 +30,30 @@ import {
 const ProjSection01 = styled.div`
   padding: 5% 2%;
   width: 100%;
-  display: grid;
-  grid-template-columns: 4fr 6fr;
+  display: flex;
   background-color: #fff;
   align-items: center;
   gap: 2vw;
   
 
   @media (max-width: 600px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
+    flex-direction: column;
+    padding: 5% 8%;
   }
 `;
 
 const ProjSection02 = styled.div`
   padding: 5% 2%;
   width: 100%;
-  display: grid;
-  grid-template-columns: 6fr 4fr;
+  display: flex;
   background-color: #fff;
   align-items: center;
   gap: 2vw;
   
 
   @media (max-width: 600px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    grid-flow: reverse;
-    grid-auto-flow: reverse;
-    grid
+    flex-direction: column-reverse;
+    padding: 5% 8%;
   }
 `;
 
@@ -69,6 +64,7 @@ const ProjSection01Texto = styled.div`
   height: 100%;
   justify-content: center;
 
+
   @media (max-width: 600px) {
     align-items: center;
   }
@@ -77,14 +73,17 @@ const ProjSection01Texto = styled.div`
 
 const ProjImagem = styled.img`
 
-width: 100%;
-height: 100%;
+  width: 40%;
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 
 `;
 
 const ProjSection03 = styled.div`
   padding: 5% 2%;
-  width: 100%;
+  width: 92%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,30 +148,35 @@ function Projeto() {
   ];
     return (
         <div className="Perguntas">
-                <MyModel />,
             <Titulo01 style={{color: "#5D5A88", margin:"2% 0"}}>Sobre o Projeto</Titulo01> 
             <ProjSection01 style={{backgroundColor: "#E8EFF7"}}>
-                <ProjImagem src={ProjetoFotoSala} alt="Foto da sala de aula" />
-                <ProjSection01Texto>
+                <ProjImagem src={ProjetoFotoSala} alt="Foto da sala de aula" style={{gridArea:"1"}} />
+                <ProjSection01Texto style={{gridArea:"1"}}>
                   <Subtitulo01 style={{color: "#5D5A88", margin:"2% 0"}}>Como tudo começou</Subtitulo01>
                   <Paragrafo01 style={{color: "#5D5A88", textAlign: "justify"}}>
                     Movidos pela visão da IBM de criar cidades mais inteligentes e sustentáveis, encontramos inspiração para nosso projeto na faculdade FIAP.Ao aceitarmos o desafio, decidimos unir nossos talentos e paixões para criar algo duradouro.  <br /> <br /> Com a iniciativa da IBM como nosso farol, começamos a trabalhar com determinação, moldando um projeto que não apenas reflete nossa ambição, mas também nosso compromisso com o futuro da nossa cidade.
                   </Paragrafo01>
                 </ProjSection01Texto>
             </ProjSection01>
-
-            <ProjSection02 style={{backgroundColor: "#789CBC4D"}}>
+            <ProjSection02 style={{backgroundColor: "#fff", '@media (minWidth: 600px)': { flexDirection: "column-reverse", backgroundColor:"red"}}}> 
                 <ProjSection01Texto>
-                <Subtitulo01 style={{color: "#5D5A88", margin:"2% 0"}}>Nossa missão</Subtitulo01>
-                <Paragrafo01 style={{color: "#5D5A88", textAlign: "justify"}}>
+                  <Subtitulo01 style={{color: "#5D5A88", margin:"2% 0"}}>Como tudo começou</Subtitulo01>
+                  <Paragrafo01 style={{color: "#5D5A88", textAlign: "justify"}}>
+                    Movidos pela visão da IBM de criar cidades mais inteligentes e sustentáveis, encontramos inspiração para nosso projeto na faculdade FIAP.Ao aceitarmos o desafio, decidimos unir nossos talentos e paixões para criar algo duradouro.  <br /> <br /> Com a iniciativa da IBM como nosso farol, começamos a trabalhar com determinação, moldando um projeto que não apenas reflete nossa ambição, mas também nosso compromisso com o futuro da nossa cidade.
+                  </Paragrafo01>
+                </ProjSection01Texto>
+                <MyModel style={{borderRadius:"20px"}} />
+            </ProjSection02>
+            <ProjSection01 style={{backgroundColor: "#E8EFF7"}}>
+                <ProjImagem src={ProjetoFotoSala} alt="Foto da sala de aula" />
+                <ProjSection01Texto>
+                  <Subtitulo01 style={{color: "#5D5A88", margin:"2% 0"}}>Como tudo começou</Subtitulo01>
+                  <Paragrafo01 style={{color: "#5D5A88", textAlign: "justify"}}>
                   Nosso compromisso é transformar nossa cidade em um ambiente mais inteligente e sustentável por meio de nosso projeto. <br /> <br /> Através da aplicação inovadora de tecnologia e ideias, estamos determinados a criar soluções tangíveis que melhorem a qualidade de vida dos cidadãos. Valorizamos a colaboração, a criatividade e a dedicação à causa.  <br /> <br />Nossa missão é pavimentar um caminho para um futuro mais promissor, onde cada passo conta na construção de uma comunidade mais eficiente e consciente do meio ambiente. Juntos, estamos impulsionando o progresso e o impacto positivo em nossa cidade.
                   </Paragrafo01>
                 </ProjSection01Texto>
-                <ProjImagem src={ProjetoAreaAlagada} alt="Foto da sala de aula" />
-            </ProjSection02>
-            <ProjSection03>
-              <Subtitulo01 style={{color: "#5D5A88", margin:"2% 0"}}>Nossa equipe</Subtitulo01>
-            </ProjSection03>
+            </ProjSection01>
+
             <ProjSection03>
             <Titulo01 style={{color: "#5D5A88", margin:"2% 0"}}>Avaliações do site!</Titulo01> 
               <ProjSection01Cards>

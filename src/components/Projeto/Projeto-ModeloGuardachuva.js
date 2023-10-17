@@ -1,25 +1,23 @@
-import React, { Suspense } from 'react';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Stats, useGLTF } from '@react-three/drei';
+import React, { useEffect } from 'react';
+import Spline from '@splinetool/react-spline';
 
-function Model() {
-  const gltf = useGLTF('../../assets/Guarda-Chuva.glb'); // Substitua pelo caminho correto do seu modelo GLTF
+export default function App() {
+  
+  useEffect(() => {
+    const handleWheel = (event) => {
+      if (event.target.tagName === 'CANVAS') {
+        event.preventDefault();
+      }
+    };
 
-  return <primitive object={gltf.scene} />;
-}
+    window.addEventListener('wheel', handleWheel, { passive: false });
 
-function App() {
+    return () => {
+      window.removeEventListener('wheel', handleWheel);
+    };
+  }, []);
+
   return (
-    <Canvas camera={{ position: [0, 2, 5] }}>
-      <ambientLight intensity={0.5} />
-      <pointLight position={[10, 10, 10]} />
-      <Suspense fallback={null}>
-        <Model />
-      </Suspense>
-      <OrbitControls />
-      <Stats />
-    </Canvas>
+    <Spline scene="https://prod.spline.design/faDBrYbvWiuF2l0v/scene.splinecode"  style={{ height: '40vh' }} />
   );
 }
-
-export default App;
