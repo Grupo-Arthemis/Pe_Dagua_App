@@ -134,7 +134,7 @@ const handleSubmit = (event) => {
         style={{ color: "#5d5a88", textAlign: "center", fontSize: "20px" }}
       >
         Ainda não possui uma conta? <br />
-        Você pode <a href="">criar uma conta aqui!</a>
+        Você pode <a href="#Cadastro">criar uma conta aqui!</a>
       </Paragrafo01>
     </Form>
   );

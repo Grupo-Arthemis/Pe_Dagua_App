@@ -12,6 +12,7 @@ import Login from './components/Login/Login';
 import Cadastro from './components/Cadastro/Cadastro';
 import Perguntas from './components/Perguntas/Perguntas';
 import Projeto from './components/Projeto/Projeto';
+import Grupo from './components/Grupo/Grupo';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/Cadastro" component={Cadastro} />
         <Route path="/Perguntas" component={Perguntas} />
         <Route path="/Projeto" component={Projeto} />
+        <Route path="/Grupo" component={Grupo} />
       </Switch>
       <Footer />
     </Router>
