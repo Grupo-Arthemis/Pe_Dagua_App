@@ -155,20 +155,20 @@ function OffcanvasExample() {
                   id="offcanvasNavbarDropdown"
                   className={location.pathname === '/Projeto' || location.pathname === '/Grupo' ? 'ativo' : ''}
                 >
-                  <NavDropdown.Item href="#Projeto"
+                  <NavDropdown.Item href="#Projeto" onClick={handleCloseOffcanvas}
                   className={location.pathname === '/Projeto' ? 'ativo' : ''}
                   >
                     Sobre o Projeto
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#Grupo"
+                  <NavDropdown.Item href="#Grupo" onClick={handleCloseOffcanvas}
                   className={location.pathname === '/Grupo' ? 'ativo' : ''}>
                     Sobre o Grupo
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#Contato"
+                  <NavDropdown.Item href="#Contato" onClick={handleCloseOffcanvas}
                   className={location.pathname === '/Contato' ? 'ativo' : ''}>
                     Contato
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#Perguntas"
+                  <NavDropdown.Item href="#Perguntas" onClick={handleCloseOffcanvas}
                   className={location.pathname === '/Perguntas' ? 'ativo' : ''}>
                     Perguntas Frequentes
                   </NavDropdown.Item>

@@ -61,6 +61,12 @@ export const BotaoPrimario01 = styled(Link)`
     color: #fff;
     background-color: #403e61;
     }
+
+    @media (max-width: 600px) {
+        width: 40%;
+        padding: 3% 3%;
+        
+    }
 `
 
 export const BotaoPrimario02 = styled.button`
@@ -108,6 +114,12 @@ export const BotaoSecundario01 = styled(Link)`
     &:hover {
     color: #fff;
     background-color: #403e61;
+    }
+
+    @media (max-width: 600px) {
+        width: 40%;
+        padding: 3% 3%;
+        
     }
 `
 

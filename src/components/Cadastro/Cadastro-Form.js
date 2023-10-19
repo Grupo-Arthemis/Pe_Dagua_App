@@ -32,6 +32,11 @@ const BotaoCadastro = styled.button`
     color: #fff;
     background-color: #403e61;
   }
+
+  @media (max-width: 600px) {
+    width: 100%;
+    padding: 5% 3%;
+  }
 `;
 
 function FormPezin() {
