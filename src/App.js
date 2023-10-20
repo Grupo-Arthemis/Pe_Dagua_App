@@ -13,6 +13,8 @@ import Cadastro from './components/Cadastro/Cadastro';
 import Perguntas from './components/Perguntas/Perguntas';
 import Projeto from './components/Projeto/Projeto';
 import Grupo from './components/Grupo/Grupo';
+import Contato from './components/Contato/Contato';
+import Planos from './components/Planos/Planos';
 
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
         <Route path="/Perguntas" component={Perguntas} />
         <Route path="/Projeto" component={Projeto} />
         <Route path="/Grupo" component={Grupo} />
+        <Route path="/Contato" component={Contato} />
+        <Route path="/Planos" component={Planos} />
       </Switch>
       <Footer />
     </Router>

@@ -5,16 +5,6 @@ import GarotoCadastro from '../../assets/Garoto-Cadastro.png';
 
 import React from "react";
 
-import {
-    Titulo01,
-    Subtitulo01,
-    Subtitulo02,
-    BotaoPrimario01,
-    BotaoPrimario02,
-    BotaoSecundario01,
-    Paragrafo01,
-  } from "../Comun/Comum.js";
-
 
 const CadastroSection01 = styled.div`
   padding: 5% 2% 0% 2%;
