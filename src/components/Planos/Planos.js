@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import React from "react";
+import { useState } from "react";
 
 import PlanosCard from "./Planos-Card.js";
 
@@ -16,9 +17,9 @@ import {
 const PlanosSection01 = styled.div`
   padding: 5% 2%;
   width: 100%;
-  height: 110vh;
+  min-height: 900px;
   display: grid;
-  grid-template-columns: 1.4fr 0.6fr;
+  grid-template-columns: 1;
   background-color: #fff;
   gap: 10vh;
   background: linear-gradient(
@@ -40,9 +41,12 @@ const PlanosContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   height: 500px;
+  width: 100%;
+  min-width: 1000px;
+  max-width: 1400px;
   background-color: #fff;
   border-radius: 20px;
-  padding: 0 20px 20px 20px;
+  padding: 10px 20px;
   gap: 20px;
 `;
 
@@ -55,7 +59,6 @@ function Planos() {
       titulo: "Plano Premium",
       descricao: "O melhor plano para quem quer aproveitar ao máximo",
       items: ["Consultas instântaneas", "Benefícios", "Descontos"],
-      botaoText: "Escolher Plano",
       escolhido: true,
     },
     {
@@ -67,7 +70,31 @@ function Planos() {
       items: ["Consultas instântaneas", "Benefícios"],
       escolhido: false,
     },
+    {
+      popular: false,
+      preco: "R$ 49,99",
+      periodo: "por mês",
+      titulo: "Plano Básico",
+      descricao: "O plano ideal para quem está começando",
+      items: ["Consultas instântaneas", "Benefícios"],
+      escolhido: false,
+    },
+    {
+      popular: false,
+      preco: "R$ 49,99",
+      periodo: "por mês",
+      titulo: "Plano Básico",
+      descricao: "O plano ideal para quem está começando",
+      items: ["Consultas instântaneas", "Benefícios"],
+      escolhido: false,
+    },
   ];
+
+  const [selectedCardIndex, setSelectedCardIndex] = useState(-1);
+
+  function handleCardClick(index) {
+    setSelectedCardIndex(index === selectedCardIndex ? -1 : index);
+  }
 
   return (
     <div className="Planos">
@@ -92,6 +119,7 @@ function Planos() {
                   descricao={plano.descricao}
                   items={plano.items}
                   escolhido={plano.escolhido}
+                  onClick={() => handleCardClick(index)}
                 />
               ))}
             </PlanosContainer>
