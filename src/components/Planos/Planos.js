@@ -14,6 +14,10 @@ import {
   Paragrafo01,
 } from "../Comun/Comum.js";
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 const PlanosSection01 = styled.div`
   padding: 5% 2%;
   width: 100%;
@@ -53,49 +57,42 @@ const PlanosContainer = styled.div`
 function Planos() {
   const planos = [
     {
+      popular: false,
+      preco: "Grátis",
+      periodo: "",
+      titulo: "Garoa",
+      descricao: "Acesso a consultas instantâneas",
+      items: ["Acesso gratuito", "2 endereços salvos", "Alertas"],
+      escolhido: false,
+    },
+    {
       popular: true,
-      preco: "R$ 99,99",
-      periodo: "por mês",
-      titulo: "Plano Premium",
-      descricao: "O melhor plano para quem quer aproveitar ao máximo",
-      items: ["Consultas instântaneas", "Benefícios", "Descontos"],
-      escolhido: true,
-    },
-    {
-      popular: false,
-      preco: "R$ 49,99",
-      periodo: "por mês",
-      titulo: "Plano Básico",
-      descricao: "O plano ideal para quem está começando",
-      items: ["Consultas instântaneas", "Benefícios"],
+      preco: "R$ 5,99",
+      periodo: "/mês",
+      titulo: "Chuva",
+      descricao: "Acesso a consultas instântaneas + benefícios",
+      items: ["10 endereços salvos", "Tempo real", "Alertas"],
       escolhido: false,
     },
     {
       popular: false,
-      preco: "R$ 49,99",
-      periodo: "por mês",
-      titulo: "Plano Básico",
-      descricao: "O plano ideal para quem está começando",
-      items: ["Consultas instântaneas", "Benefícios"],
+      preco: "R$ 14,99",
+      periodo: "/mês",
+      titulo: "Tempestade",
+      descricao: "Aparelho personalizado e informações mais precisas",
+      items: ["10 endereços salvos", "Tempo real", "Alertas", "Acesso personalizado"],
       escolhido: false,
     },
     {
       popular: false,
-      preco: "R$ 49,99",
-      periodo: "por mês",
-      titulo: "Plano Básico",
-      descricao: "O plano ideal para quem está começando",
-      items: ["Consultas instântaneas", "Benefícios"],
+      preco: "R$ 99,90",
+      periodo: "/10k de requisições",
+      titulo: "Business",
+      descricao: "A informação que a sua empresa precisa!",
+      items: ["Tempo real", "API do Guarda Chuva", "Acesso personalizado"],
       escolhido: false,
     },
   ];
-
-  const [selectedCardIndex, setSelectedCardIndex] = useState(-1);
-
-  function handleCardClick(index) {
-    setSelectedCardIndex(index === selectedCardIndex ? -1 : index);
-  }
-
   return (
     <div className="Planos">
       <PlanosSection01>
@@ -108,21 +105,62 @@ function Planos() {
               Desbloqueie vantagens exclusivas com nossos planos de assinatura.
               Torne-se membro hoje e aproveite o melhor do nosso site!
             </Paragrafo01>
-            <PlanosContainer>
-              {planos.map((plano, index) => (
-                <PlanosCard
-                  key={index}
-                  popular={plano.popular}
-                  preco={plano.preco}
-                  periodo={plano.periodo}
-                  titulo={plano.titulo}
-                  descricao={plano.descricao}
-                  items={plano.items}
-                  escolhido={plano.escolhido}
-                  onClick={() => handleCardClick(index)}
-                />
-              ))}
-            </PlanosContainer>
+              <Slider
+                dots
+                infinite
+                autoplay
+                slidesToShow={4}
+                centerMode={true}
+                autoplaySpeed={5000}
+                style={{ width: "90vw", margin: "0 auto" }}
+                responsive={[
+                  {
+                    breakpoint: 1640,
+                    settings: {
+                      slidesToShow: 3,
+                      infinite: true,
+                      dots: true,
+                    },
+                  },
+                  {
+                    breakpoint: 1300,
+                    settings: {
+                      fade: false,
+                      slidesToShow: 3,
+                      initialSlide: 3,
+                    },
+                  },
+                  {
+                    breakpoint: 1150,
+                    settings: {
+                      fade: false,
+                      slidesToShow: 2,
+                      slidesToScroll: 2,
+                    },
+                  },
+                  {
+                    breakpoint: 800,
+                    settings: {
+                      fade: false,
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                    },
+                  },
+                ]}
+              >
+                {planos.map((plano, index) => (
+                  <PlanosCard
+                    key={index}
+                    popular={plano.popular}
+                    preco={plano.preco}
+                    periodo={plano.periodo}
+                    titulo={plano.titulo}
+                    descricao={plano.descricao}
+                    items={plano.items}
+                    escolhido={plano.escolhido}
+                  />
+                ))}
+              </Slider>
           </PlanosLeftGrid>
         </div>
       </PlanosSection01>
