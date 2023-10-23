@@ -2,7 +2,7 @@
 
 # Acesse em:
 - *O site:* [https://grupo-arthemis.github.io/Site_peDagua_React/](https://grupo-arthemis.github.io/Pe_Dagua_App/#/)
-- *O Repositorio:* [[https://grupo-arthemis.github.io/Site_peDagua_React/](https://github.com/Grupo-Arthemis/Site_peDagua_React)](https://github.com/Grupo-Arthemis/Pe_Dagua_App)
+- *O Repositorio:* https://github.com/Grupo-Arthemis/Pe_Dagua_App
 
 # Informações úteis 
 
