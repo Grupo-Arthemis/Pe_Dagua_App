@@ -71,6 +71,19 @@ const ProjSection01Texto = styled.div`
 
 `;
 
+const ProjetoMobileAdvice = styled.div`
+
+  display: none;
+  @media (max-width: 600px) {
+    display: block;
+    width: 100%;
+    padding: 5% 2%;
+    background-color: #fff;
+    text-align: center;
+  }
+`;
+
+
 const ProjImagem = styled.img`
 
   width: 40%;
@@ -158,6 +171,7 @@ function Projeto() {
                   </Paragrafo01>
                 </ProjSection01Texto>
             </ProjSection01>
+            <ProjetoMobileAdvice>Utilize dois dedos para alterar a visualização</ProjetoMobileAdvice>
             <ProjSection02 style={{backgroundColor: "#fff", '@media (minWidth: 600px)': { flexDirection: "column-reverse", backgroundColor:"red"}}}> 
                 <ProjSection01Texto>
                   <Subtitulo01 style={{color: "#5D5A88", margin:"2% 0"}}>Como tudo começou</Subtitulo01>

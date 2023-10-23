@@ -18,6 +18,6 @@ export default function App() {
   }, []);
 
   return (
-    <Spline scene="https://prod.spline.design/faDBrYbvWiuF2l0v/scene.splinecode"  style={{ height: '40vh' }} />
+    <Spline scene="https://prod.spline.design/bKhEirAO9KL8mg18/scene.splinecode"  style={{ height: '40vh' }} />
   );              
 }
