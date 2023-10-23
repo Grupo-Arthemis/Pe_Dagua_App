@@ -19,5 +19,5 @@ export default function App() {
 
   return (
     <Spline scene="https://prod.spline.design/faDBrYbvWiuF2l0v/scene.splinecode"  style={{ height: '40vh' }} />
-  );
+  );              
 }
