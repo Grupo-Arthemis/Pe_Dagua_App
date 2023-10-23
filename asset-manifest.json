@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Pe_Dagua_App/static/css/main.66d7eb4c.css",
-    "main.js": "/Pe_Dagua_App/static/js/main.c00a25cb.js",
+    "main.css": "/Pe_Dagua_App/static/css/main.5ce5bbee.css",
+    "main.js": "/Pe_Dagua_App/static/js/main.3caf7d86.js",
     "static/js/872.a4a9de45.chunk.js": "/Pe_Dagua_App/static/js/872.a4a9de45.chunk.js",
     "static/js/227.4fd8eb73.chunk.js": "/Pe_Dagua_App/static/js/227.4fd8eb73.chunk.js",
     "static/js/526.6908265d.chunk.js": "/Pe_Dagua_App/static/js/526.6908265d.chunk.js",
@@ -27,6 +27,7 @@
     "static/media/Garoto-Cadastro.png": "/Pe_Dagua_App/static/media/Garoto-Cadastro.1f41ff6928b439c62e16.png",
     "static/media/Login-Garota.png": "/Pe_Dagua_App/static/media/Login-Garota.f439ddbc2212e46599cf.png",
     "static/media/Garota-Cadastro.png": "/Pe_Dagua_App/static/media/Garota-Cadastro.d80c880682d1543cb6a2.png",
+    "static/media/Contato.png": "/Pe_Dagua_App/static/media/Contato.91c4dfeefeff8f1d8c17.png",
     "static/media/Luis.png": "/Pe_Dagua_App/static/media/Luis.e8519b4c42fa1298f8b8.png",
     "static/media/Julia.png": "/Pe_Dagua_App/static/media/Julia.d187205f48f4447330f7.png",
     "static/media/Victor.png": "/Pe_Dagua_App/static/media/Victor.de7d90fb400bd07059b4.png",
@@ -37,8 +38,10 @@
     "static/media/slick.ttf": "/Pe_Dagua_App/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Pe_Dagua_App/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Pe_Dagua_App/index.html",
-    "main.66d7eb4c.css.map": "/Pe_Dagua_App/static/css/main.66d7eb4c.css.map",
-    "main.c00a25cb.js.map": "/Pe_Dagua_App/static/js/main.c00a25cb.js.map",
+    "static/media/Planos-check-circle-2.svg": "/Pe_Dagua_App/static/media/Planos-check-circle-2.2e685f958c0ce2df60d3cc5ac033a72b.svg",
+    "static/media/Planos-check-circle-1.svg": "/Pe_Dagua_App/static/media/Planos-check-circle-1.50150b2eb8278acb6c16f2f5ea0dfb06.svg",
+    "main.5ce5bbee.css.map": "/Pe_Dagua_App/static/css/main.5ce5bbee.css.map",
+    "main.3caf7d86.js.map": "/Pe_Dagua_App/static/js/main.3caf7d86.js.map",
     "872.a4a9de45.chunk.js.map": "/Pe_Dagua_App/static/js/872.a4a9de45.chunk.js.map",
     "227.4fd8eb73.chunk.js.map": "/Pe_Dagua_App/static/js/227.4fd8eb73.chunk.js.map",
     "526.6908265d.chunk.js.map": "/Pe_Dagua_App/static/js/526.6908265d.chunk.js.map",
@@ -47,7 +50,7 @@
     "787.cfdb8f9f.chunk.js.map": "/Pe_Dagua_App/static/js/787.cfdb8f9f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.66d7eb4c.css",
-    "static/js/main.c00a25cb.js"
+    "static/css/main.5ce5bbee.css",
+    "static/js/main.3caf7d86.js"
   ]
 }
