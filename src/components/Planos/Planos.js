@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import React from "react";
 import { useState } from "react";
+import './Planos.css';
 
 import PlanosCard from "./Planos-Card.js";
 
@@ -111,6 +112,7 @@ function Planos() {
                 autoplay
                 slidesToShow={4}
                 centerMode={true}
+                centerPadding="5px"
                 autoplaySpeed={5000}
                 style={{ width: "90vw", margin: "0 auto" }}
                 responsive={[
