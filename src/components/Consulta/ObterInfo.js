@@ -28,7 +28,7 @@ const CardConsulta = styled.div`
   width: 32vw;
   padding: 10px 20px;
   border-radius: 25px;
-  height: 70vh;
+  height: 75vh;
   margin: 0 auto;
 
   background-color: #133c4a;
@@ -57,7 +57,7 @@ const CardConsultaTitulo = styled.h2`
 `;
 
 const CardConsultaDescricao = styled.h3`
-  color: ${(props) => (props.escolhido ? "#fff" : "#231D4F")};
+  color: #fff;
   font-family: Poppins;
   font-size: 15px;
   font-style: normal;
@@ -105,7 +105,7 @@ function VerificarAreas(
         setUmidade,
         setTemperatura
       );
-      break;
+      return;
     } else {
       setNivelDeChuva(0);
       setUmidade(0);
@@ -208,10 +208,7 @@ function ObterInfo(props) {
             style={{
               width: "40vw",
               height: "70vh",
-              margin: "0 auto",
-              "@media screen and (max-width: 800px)": {
-                width: "80vw",
-              },
+              margin: "0 auto"
             }}
             responsive={[
               {
@@ -244,18 +241,29 @@ function ObterInfo(props) {
                   fade: false,
                   slidesToShow: 1,
                   slidesToScroll: 1,
+                  style: {
+                    width: "95vw",
+                  },
                 },
               },
             ]}
           >
             <div style={{ padding: "10px" }}>
               <CardConsulta>
-                <CardConsultaTitulo>Nivel de chuva</CardConsultaTitulo>
+                <img />
+                <CardConsultaTitulo>Nivel de chuva Alto</CardConsultaTitulo>
+                <CardConsultaDescricao>Nivel de chuva: {nivelDeChuva}</CardConsultaDescricao>
+                <CardConsultaDescricao>Nivel de umidade: {umidade}</CardConsultaDescricao>
+                <CardConsultaDescricao>Nivel de temperatura: {temperatura}</CardConsultaDescricao>
               </CardConsulta>
             </div>
             <div style={{ padding: "10px" }}>
-              <CardConsulta>
-                <CardConsultaTitulo>Nivel de chuva</CardConsultaTitulo>
+            <CardConsulta>
+                <img />
+                <CardConsultaTitulo>Nivel de chuva Alto</CardConsultaTitulo>
+                <CardConsultaDescricao>Nivel de chuva: {nivelDeChuva}</CardConsultaDescricao>
+                <CardConsultaDescricao>Nivel de umidade: {umidade}</CardConsultaDescricao>
+                <CardConsultaDescricao>Nivel de temperatura: {temperatura}</CardConsultaDescricao>
               </CardConsulta>
             </div>
           </Slider>

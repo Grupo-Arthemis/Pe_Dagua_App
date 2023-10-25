@@ -47,6 +47,7 @@ const ConsuSection02 = styled.div`
 
 const ConsuSection02InteractiveArea = styled.div`
   width: 100%;
+  height: 100%;
 
 `;
 
