@@ -166,9 +166,11 @@ function pegaDados(GuardaChuvaId, setNivelDeChuva, setUmidade, setTemperatura) {
     redirect: "follow",
   };
 
-  var apiUrl = `https://api.tago.io/data?`;
-
-  fetch(apiUrl, requestOptions)
+  const apiUrlTemperatura = 'https://api.tago.io/data?variable=temperatura&query=last_item';
+  const apiUrlUmidade = 'https://api.tago.io/data?variable=umidade&query=last_item';
+  const apiUrlNivelDeChuva = 'https://api.tago.io/data?variable=chuva&query=last_item';
+  
+  fetch(apiUrlTemperatura, requestOptions)
     .then((response) => {
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
@@ -177,20 +179,50 @@ function pegaDados(GuardaChuvaId, setNivelDeChuva, setUmidade, setTemperatura) {
     })
     .then((result) => {
       if (result.result && result.result.length > 0) {
-        var data = result;
-
-        setNivelDeChuva(data.result[2].value);
-        setUmidade(data.result[1].value);
+        const data = result;
+        console.log('API response (temperatura):', data);
         setTemperatura(data.result[0].value);
-
-        console.log("Nivel de Chuva: ", data.result[0].value);
-        console.log("Umidade: ", data.result[1].value);
-        console.log("Temperatura: ", data.result[2].value);
       } else {
-        console.error("API response is missing expected data.");
+        console.error('API response is missing expected data.');
       }
     })
-    .catch((error) => console.log("error", error));
+    .catch((error) => console.log('error', error));
+  
+  fetch(apiUrlUmidade, requestOptions)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then((result) => {
+      if (result.result && result.result.length > 0) {
+        const data = result;
+        console.log('API response (umidade):', data);
+        setUmidade(data.result[0].value);
+      } else {
+        console.error('API response is missing expected data.');
+      }
+    })
+    .catch((error) => console.log('error', error));
+  
+  fetch(apiUrlNivelDeChuva, requestOptions)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then((result) => {
+      if (result.result && result.result.length > 0) {
+        const data = result;
+        console.log('API response (nivel de chuva):', data);
+        setNivelDeChuva(data.result[0].value);
+      } else {
+        console.error('API response is missing expected data.');
+      }
+    })
+    .catch((error) => console.log('error', error));
 }
 
 function ObterInfo(props) {

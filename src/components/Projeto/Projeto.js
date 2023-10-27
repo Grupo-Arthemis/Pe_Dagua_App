@@ -167,16 +167,20 @@ function Projeto() {
                 <ProjSection01Texto style={{gridArea:"1"}}>
                   <Subtitulo01 style={{color: "#5D5A88", margin:"2% 0"}}>Como tudo começou</Subtitulo01>
                   <Paragrafo01 style={{color: "#5D5A88", textAlign: "justify"}}>
-                    Movidos pela visão da IBM de criar cidades mais inteligentes e sustentáveis, encontramos inspiração para nosso projeto na faculdade FIAP.Ao aceitarmos o desafio, decidimos unir nossos talentos e paixões para criar algo duradouro.  <br /> <br /> Com a iniciativa da IBM como nosso farol, começamos a trabalhar com determinação, moldando um projeto que não apenas reflete nossa ambição, mas também nosso compromisso com o futuro da nossa cidade.
+                    Movidos pela visão da <strong style={{fontWeight:"bold"}}> IBM </strong> de criar cidades mais inteligentes e sustentáveis, encontramos inspiração para nosso projeto na faculdade<strong style={{fontWeight:"bold"}}> FIAP</strong>. Ao aceitarmos o desafio, decidimos unir nossos talentos e paixões para criar algo duradouro.  <br /> <br /> Com a iniciativa da <strong style={{fontWeight:"bold"}}>IBM</strong> como nosso farol, começamos a trabalhar com determinação, moldando um projeto que não apenas reflete nossa ambição, mas também nosso compromisso com o futuro da nossa cidade.
                   </Paragrafo01>
                 </ProjSection01Texto>
             </ProjSection01>
             <ProjetoMobileAdvice>Utilize dois dedos para alterar a visualização</ProjetoMobileAdvice>
             <ProjSection02 style={{backgroundColor: "#fff", '@media (minWidth: 600px)': { flexDirection: "column-reverse", backgroundColor:"red"}}}> 
                 <ProjSection01Texto>
-                  <Subtitulo01 style={{color: "#5D5A88", margin:"2% 0"}}>Como tudo começou</Subtitulo01>
+                  <Subtitulo01 style={{color: "#5D5A88", margin:"2% 0"}}>Nosso Ajudante</Subtitulo01>
                   <Paragrafo01 style={{color: "#5D5A88", textAlign: "justify"}}>
-                    Movidos pela visão da IBM de criar cidades mais inteligentes e sustentáveis, encontramos inspiração para nosso projeto na faculdade FIAP.Ao aceitarmos o desafio, decidimos unir nossos talentos e paixões para criar algo duradouro.  <br /> <br /> Com a iniciativa da IBM como nosso farol, começamos a trabalhar com determinação, moldando um projeto que não apenas reflete nossa ambição, mas também nosso compromisso com o futuro da nossa cidade.
+                  O <strong style={{fontWeight:"bold"}}> Guarda_Chuva </strong> é um dispositivo inteligente que faz parte do sistema Pé d’água de prevenção de desastres naturais. Ele mede a quantidade e a intensidade da chuva com um pluviômetro de báscula que se comunica via WiFi com outros aparelhos próximos. Assim, ele envia dados em tempo real para você se proteger das enchentes em São Paulo. 
+                  <br />
+                  <br />
+                  <br />
+                  <br />
                   </Paragrafo01>
                 </ProjSection01Texto>
                 <MyModel style={{borderRadius:"20px"}} />
@@ -184,7 +188,7 @@ function Projeto() {
             <ProjSection01 style={{backgroundColor: "#E8EFF7"}}>
                 <ProjImagem src={ProjetoFotoSala} alt="Foto da sala de aula" />
                 <ProjSection01Texto>
-                  <Subtitulo01 style={{color: "#5D5A88", margin:"2% 0"}}>Como tudo começou</Subtitulo01>
+                  <Subtitulo01 style={{color: "#5D5A88", margin:"2% 0"}}>Nossa missão</Subtitulo01>
                   <Paragrafo01 style={{color: "#5D5A88", textAlign: "justify"}}>
                   Nosso compromisso é transformar nossa cidade em um ambiente mais inteligente e sustentável por meio de nosso projeto. <br /> <br /> Através da aplicação inovadora de tecnologia e ideias, estamos determinados a criar soluções tangíveis que melhorem a qualidade de vida dos cidadãos. Valorizamos a colaboração, a criatividade e a dedicação à causa.  <br /> <br />Nossa missão é pavimentar um caminho para um futuro mais promissor, onde cada passo conta na construção de uma comunidade mais eficiente e consciente do meio ambiente. Juntos, estamos impulsionando o progresso e o impacto positivo em nossa cidade.
                   </Paragrafo01>
