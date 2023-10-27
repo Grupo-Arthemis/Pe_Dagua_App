@@ -16,14 +16,18 @@ const libraries = ["places"];
 
 function CepsFavoritos() {
   const userLogado = localStorage.getItem("UserLogado");
-  const UserLogadoCepsFavoritos = localStorage
-    .getItem("UserLogadoCepsFavoritos")
-    .split(",");
+  if (userLogado == null) {
+    return [];
+  } else {
+    const UserLogadoCepsFavoritos = localStorage
+      .getItem("UserLogadoCepsFavoritos")
+      .split(",");
 
-  if (userLogado != null) {
-    console.log("UserLogado: ", userLogado);
-    console.log("UserLogadoCepsFavoritos: ", UserLogadoCepsFavoritos);
-    return UserLogadoCepsFavoritos;
+    if (userLogado != null) {
+      console.log("UserLogado: ", userLogado);
+      console.log("UserLogadoCepsFavoritos: ", UserLogadoCepsFavoritos);
+      return UserLogadoCepsFavoritos;
+    }
   }
 }
 
