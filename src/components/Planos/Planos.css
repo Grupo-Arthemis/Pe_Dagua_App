@@ -1,3 +1,7 @@
   .slick-slide.slick-active {
     margin: 0 0; /* Margem para o slide central */
   }
+
+  .dropdown-toggle::after {
+    border-left: .25em solid transparent !important;
+}

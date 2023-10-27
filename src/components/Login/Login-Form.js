@@ -54,6 +54,12 @@ function FormGroupExample() {
             console.log("Nome: " + data.Nome[i]);
             console.log("Email: " + data.Email[i]);
             console.log("Senha: " + data.Senha[i]);
+
+            
+          localStorage.setItem('UserLogado', data.Email[i]);
+          localStorage.setItem('UserLogadoCepsFavoritos',( (data.CepsFavoritos[i].split(';'))));
+
+
             return true;
         }
     }

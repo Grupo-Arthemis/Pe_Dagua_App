@@ -2,6 +2,8 @@ import data from "./DispositivosGuardaChuva.json";
 import styled from "styled-components";
 import React, { useState, useEffect } from "react";
 
+import FuntoCard from "../../assets/cardConsulta/fundoCard.png";
+
 import EnchenteAlta from "../../assets/cardsConsultasIcons/enchente-icone-alto.svg";
 import EnchenteMedio from "../../assets/cardsConsultasIcons/enchente-icone-medio.svg";
 import EnchenteBaixo from "../../assets/cardsConsultasIcons/enchente-icone-baixo.svg";
@@ -26,10 +28,16 @@ const ConsuSection02CardContainer = styled.div`
 
 const CardConsulta = styled.div`
   width: 32vw;
-  padding: 10px 20px;
+  padding: 10px 20px 35% 20px;
   border-radius: 25px;
   height: 75vh;
   margin: 0 auto;
+  background-image: url(${FuntoCard});
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 
   background-color: #133c4a;
 
@@ -41,10 +49,11 @@ const CardConsulta = styled.div`
 const CardConsultaSubtitulo = styled.h1`
   color: #fff;
   font-family: Poppins;
-  font-size: 17px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  text-align: center;
 `;
 
 const CardConsultaTitulo = styled.h2`
@@ -52,8 +61,9 @@ const CardConsultaTitulo = styled.h2`
   font-family: Poppins;
   font-size: 28px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 900;
   line-height: normal;
+  text-align: center;
 `;
 
 const CardConsultaDescricao = styled.h3`
@@ -208,7 +218,7 @@ function ObterInfo(props) {
             style={{
               width: "40vw",
               height: "70vh",
-              margin: "0 auto"
+              margin: "0 auto",
             }}
             responsive={[
               {
@@ -251,19 +261,43 @@ function ObterInfo(props) {
             <div style={{ padding: "10px" }}>
               <CardConsulta>
                 <img />
-                <CardConsultaTitulo>Nivel de chuva Alto</CardConsultaTitulo>
-                <CardConsultaDescricao>Nivel de chuva: {nivelDeChuva}</CardConsultaDescricao>
-                <CardConsultaDescricao>Nivel de umidade: {umidade}</CardConsultaDescricao>
-                <CardConsultaDescricao>Nivel de temperatura: {temperatura}</CardConsultaDescricao>
+                <CardConsultaTitulo>
+                  {nivelDeChuva && nivelDeChuva.split(";")[1]}
+                </CardConsultaTitulo>
+                <CardConsultaSubtitulo>
+                  Detectamos uma chuva intensa na região
+                </CardConsultaSubtitulo>
+                <CardConsultaDescricao>
+                  Nivel de chuva: {nivelDeChuva && nivelDeChuva.split(";")[0]}{" "}
+                  mm
+                </CardConsultaDescricao>
               </CardConsulta>
             </div>
             <div style={{ padding: "10px" }}>
-            <CardConsulta>
+              <CardConsulta>
                 <img />
-                <CardConsultaTitulo>Nivel de chuva Alto</CardConsultaTitulo>
-                <CardConsultaDescricao>Nivel de chuva: {nivelDeChuva}</CardConsultaDescricao>
-                <CardConsultaDescricao>Nivel de umidade: {umidade}</CardConsultaDescricao>
-                <CardConsultaDescricao>Nivel de temperatura: {temperatura}</CardConsultaDescricao>
+                <CardConsultaTitulo>
+                  {umidade && umidade.split(";")[1]}
+                </CardConsultaTitulo>
+                <CardConsultaSubtitulo>Umidade da req     qqSDXZX1Q2222 Qa\zgião</CardConsultaSubtitulo>
+                <CardConsultaDescricao>
+                  Nivel de umidade: {umidade && umidade.split(";")[0]} %
+                </CardConsultaDescricao>
+              </CardConsulta>
+            </div>
+            <div style={{ padding: "10px" }}>
+              <CardConsulta>
+                <img />
+                <CardConsultaTitulo>
+                  {temperatura && temperatura.split(";")[1]}
+                </CardConsultaTitulo>
+                <CardConsultaSubtitulo>
+                  Temperatura da região
+                </CardConsultaSubtitulo>
+                <CardConsultaDescricao>
+                  Nivel de temperatura:{" "}
+                  {temperatura && temperatura.split(";")[0]} ℃
+                </CardConsultaDescricao>
               </CardConsulta>
             </div>
           </Slider>

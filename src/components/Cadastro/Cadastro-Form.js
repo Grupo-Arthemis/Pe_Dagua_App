@@ -88,15 +88,45 @@ function FormPezin() {
     setSenhaValid(senha.length > 0);
   }
 
+
+
+
   function handleCep01Change(event) {
     const cep01 = event.target.value;
-    setCep01Valid(cep01.length > 0);
+    if (cep01.length == 8) {
+      fetch(`https://viacep.com.br/ws/${cep01}/json/`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('CEP not found');
+        }
+        return response.json();
+      })
+      .then((data) => {
+        console.log(data);
+        if (data.erro) {
+          throw new Error('CEP not found');
+        } else {
+          setCep01Valid(true);
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+    }
   }
+
+
+
 
   function handleCep02Change(event) {
     const cep02 = event.target.value;
-    setCep02Valid(cep02.length > 0);
+    setCep02Valid(cep02.length == 8);
   }
+
+
+
+
+
 
   async function postApi() {
     const newData = {
@@ -296,7 +326,7 @@ function FormPezin() {
           <Form.Control
             size="lg"
             required
-            type="text"
+            type="number"
             placeholder="CEP favorito 1"
             ref={cep01Ref}
             style={{ background: "#F0EFFF", color: "#5d5a88" }}
@@ -317,7 +347,7 @@ function FormPezin() {
           <Form.Control
             size="lg"
             required
-            type="text"
+            type="number"
             placeholder="CEP favorito 2"
             ref={cep02Ref}
             style={{ background: "#F0EFFF", color: "#5d5a88" }}
