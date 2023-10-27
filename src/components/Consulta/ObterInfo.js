@@ -13,6 +13,10 @@ import ChuvaFraca from "../../assets/cardConsulta/cardsIcons/chuva/2-ChuvaFraca.
 import ChuvaMedia from "../../assets/cardConsulta/cardsIcons/chuva/3-ChuvaMedia.png";
 import ChuvaForte from "../../assets/cardConsulta/cardsIcons/chuva/4-ChuvaForte.png";
 
+import umidadeBaixa from "../../assets/cardConsulta/cardsIcons/umidade/1-UmidadeBaixa.png";
+import umidadeBoa from "../../assets/cardConsulta/cardsIcons/umidade/2-UmidadeBoa.png";
+import umidadeAlta from "../../assets/cardConsulta/cardsIcons/umidade/3-UmidadeAlta.png";
+
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -308,7 +312,7 @@ function ObterInfo(props) {
                 <CardConsultaTitulo>
                 { umidade && (
                     umidade.split(";")[1] === "UmidadeBaixa" ? "Umidade Baixa" :
-                    umidade.split(";")[1] === "UmidadeBoa" ? "Umidade boa" :
+                    umidade.split(";")[1] === "UmidadeBoa" ? "Umidade Boa" :
                     umidade.split(";")[1] === "UmidadeAlta" ? "Umidade Alta" :
                     null
                   )}
