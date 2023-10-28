@@ -141,7 +141,7 @@ function Footer() {
           </li>
           <li>
             <FooterTextosSubTitulo>
-              Um sistema de alerta e monitoramento de enchentes
+              Um sistema de alerta de alagamentos e chuvas fortes
             </FooterTextosSubTitulo>
           </li>
         </FooterTextosColuna>

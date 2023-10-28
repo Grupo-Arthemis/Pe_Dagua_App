@@ -133,7 +133,7 @@ function Home() {
     {
       Titulo: "Milhares de vidas salvas",
       Conteudo:
-        "Nosso sistema 'Pé D'Água' já contribuiu para salvar milhares de vidas, tornando nossa cidade mais segura a cada dia.",
+        "Nosso sistema Pé D'Água já contribuiu para salvar milhares de vidas, tornando nossa cidade mais segura a cada dia.",
     },
     {
       Titulo: "Novas tecnologias",

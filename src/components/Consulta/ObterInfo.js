@@ -17,6 +17,8 @@ import umidadeBaixa from "../../assets/cardConsulta/cardsIcons/umidade/1-Umidade
 import umidadeBoa from "../../assets/cardConsulta/cardsIcons/umidade/2-UmidadeBoa.png";
 import umidadeAlta from "../../assets/cardConsulta/cardsIcons/umidade/3-UmidadeAlta.png";
 
+import SadEmoji from "../../assets/cardConsulta/cardsIcons/SadEmoji.gif";
+
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -24,7 +26,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Color } from "three";
 
 const ConsuSection02CardContainer = styled.div`
-  width: 100%;
+  width: 100%;z'
   height: 100%;
 `;
 
@@ -297,35 +299,43 @@ function ObterInfo(props) {
               <CardConsulta>
               <img 
                 src={
-                  nivelDeChuva && (
-                    nivelDeChuva.split(";")[1] === "ChuvaNull" ? ChuvaNull :
-                    nivelDeChuva.split(";")[1] === "ChuvaFraca" ? ChuvaFraca :
-                    nivelDeChuva.split(";")[1] === "ChuvaMedia" ? ChuvaMedia :
-                    nivelDeChuva.split(";")[1] === "ChuvaForte" ? ChuvaForte :
-                    null
-                  )}
+                    typeof nivelDeChuva === "string" && nivelDeChuva.split(";")[1] === "ChuvaNull" ? ChuvaNull : 
+                    typeof nivelDeChuva === "string" && nivelDeChuva.split(";")[1] === "ChuvaFraca" ? ChuvaFraca :
+                    typeof nivelDeChuva === "string" && nivelDeChuva.split(";")[1] === "ChuvaMedia" ? ChuvaMedia :
+                    typeof nivelDeChuva === "string" && nivelDeChuva.split(";")[1] === "ChuvaForte" ? ChuvaForte :
+                    SadEmoji
+                  }
                 style={{width:"40%", margin:"0 auto"}} />
                 <CardConsultaTitulo>
-                  { nivelDeChuva && (
-                    nivelDeChuva.split(";")[1] === "ChuvaNull" ? "Sem Chuva" :
-                    nivelDeChuva.split(";")[1] === "ChuvaFraca" ? "Chuva Fraca" :
-                    nivelDeChuva.split(";")[1] === "ChuvaMedia" ? "Chuva Media" :
-                    nivelDeChuva.split(";")[1] === "ChuvaForte" ? "Chuva Forte" :
-                    null
-                  )}
+                {nivelDeChuva ? (
+                  typeof nivelDeChuva === "string" && nivelDeChuva.split(";")[1] === "ChuvaNull" ? "Sem Chuva" :
+                  typeof nivelDeChuva === "string" && nivelDeChuva.split(";")[1] === "ChuvaFraca" ? "Chuva Fraca" : 
+                  typeof nivelDeChuva === "string" && nivelDeChuva.split(";")[1] === "ChuvaMedia" ? "Chuva Media" :
+                  typeof nivelDeChuva === "string" && nivelDeChuva.split(";")[1] === "ChuvaForte" ? "Chuva Forte" :
+                  "Sem dispositivos na região"
+                ) : (
+                  "Sem dispositivos na região"
+                )}
                 </CardConsultaTitulo>
                 <CardConsultaSubtitulo>
-                  { nivelDeChuva && (
-                    nivelDeChuva.split(";")[1] === "ChuvaNull" ? "Não detectamos chuva na região" :
-                    nivelDeChuva.split(";")[1] === "ChuvaFraca" ? "Detectamos chuva fraca na região" :
-                    nivelDeChuva.split(";")[1] === "ChuvaMedia" ? "Detectamos chuva media na região" :
-                    nivelDeChuva.split(";")[1] === "ChuvaForte" ? "Detectamos chuva forte na região" :
-                    null
-                  )}
+                  { nivelDeChuva ? (
+                    typeof nivelDeChuva === "string" && nivelDeChuva.split(";")[1] === "ChuvaNull" ? "Não detectamos chuva na região" :
+                    typeof nivelDeChuva === "string" &&  nivelDeChuva.split(";")[1] === "ChuvaFraca" ? "Detectamos chuva fraca na região" :
+                    typeof nivelDeChuva === "string" && nivelDeChuva.split(";")[1] === "ChuvaMedia" ? "Detectamos chuva media na região" :
+                    typeof nivelDeChuva === "string" && nivelDeChuva.split(";")[1] === "ChuvaForte" ? "Detectamos chuva forte na região" :
+                    ""
+                    ) : (
+                      ""
+                    )}
                 </CardConsultaSubtitulo>
                 <CardConsultaDescricao>
-                  Nivel de chuva: {nivelDeChuva && nivelDeChuva.split(";")[0]}{" "}
-                  mm
+                {nivelDeChuva ? (
+                    <>
+                      Nivel de chuva: {nivelDeChuva && typeof umidade === "string" && nivelDeChuva.split(";")[0]} mm
+                    </>
+                  ) : (
+                    <span>Daqui a pouco estaremos ai 🐙</span>
+                  )}
                 </CardConsultaDescricao>
               </CardConsulta>
             </div>
@@ -333,27 +343,31 @@ function ObterInfo(props) {
               <CardConsulta>
                 <img 
                   src={
-                    umidade && (
-                      umidade.split(";")[1] === "UmidadeBaixa" ? umidadeBaixa :
-                      umidade.split(";")[1] === "UmidadeBoa" ? umidadeBoa :
-                      umidade.split(";")[1] === "UmidadeAlta" ? umidadeAlta :
-                      null
-                    )
+                      typeof umidade === "string" && umidade.split(";")[1] === "UmidadeBaixa" ? umidadeBaixa :
+                      typeof umidade === "string" && umidade.split(";")[1] === "UmidadeBoa" ? umidadeBoa :
+                      typeof umidade === "string" && umidade.split(";")[1] === "UmidadeAlta" ? umidadeAlta :
+                      SadEmoji
                   }
                   style={{width:"40%", margin:"0 auto"}} />
                 <CardConsultaTitulo>
-                { umidade && (
-                    umidade.split(";")[1] === "UmidadeBaixa" ? "Umidade Baixa" :
-                    umidade.split(";")[1] === "UmidadeBoa" ? "Umidade Boa" :
-                    umidade.split(";")[1] === "UmidadeAlta" ? "Umidade Alta" :
-                    null
-                  )}
+                { 
+                    typeof umidade === "string" && umidade.split(";")[1] === "UmidadeBaixa" ? "Umidade Baixa" :
+                    typeof umidade === "string" && umidade.split(";")[1] === "UmidadeBoa" ? "Umidade Boa" :
+                    typeof umidade === "string" && umidade.split(";")[1] === "UmidadeAlta" ? "Umidade Alta" :
+                    "Sem dispositivos na região"
+                  }
                 </CardConsultaTitulo>
                 <CardConsultaSubtitulo>
-                  Umidade da região:
+                  {umidade ? ("Umidade da região:") : ("")}
                 </CardConsultaSubtitulo>
                 <CardConsultaDescricao>
-                  Nivel de umidade: {umidade && umidade.split(";")[0]} %
+                {umidade ? (
+                    <>
+                      Nivel de umidade: {umidade && typeof umidade === "string" &&  umidade.split(";")[0]} %
+                    </>
+                  ) : (
+                    <span>Relaxa que estamos chegando 🐙</span>
+                  )}
                 </CardConsultaDescricao>
               </CardConsulta>
             </div>
@@ -361,30 +375,31 @@ function ObterInfo(props) {
               <CardConsulta>
                 <img 
                   src={
-                    temperatura && (
-                      temperatura.split(";")[1] === "TemperaturaBaixa" ? TemperaturaBaixa :
-                      temperatura.split(";")[1] === "TemperaturaBoa" ? TemperaturaBoa :
-                      temperatura.split(";")[1] === "TemperaturaAlta" ? TemperaturaAlta :
-                      null
-                    )
-                  }
+                    typeof temperatura === "string" && temperatura.split(";")[1] === "TemperaturaBaixa" ? TemperaturaBaixa :
+                    typeof temperatura === "string" && temperatura.split(";")[1] === "TemperaturaBoa" ? TemperaturaBoa :
+                    typeof temperatura === "string" && temperatura.split(";")[1] === "TemperaturaAlta" ? TemperaturaAlta :
+                    SadEmoji
+                    }
                 style={{width:"40%", margin:"0 auto"}} />
                 <CardConsultaTitulo>
                 {
-                    temperatura && (
-                      temperatura.split(";")[1] === "TemperaturaBaixa" ? "Temperatura Baixa" :
-                      temperatura.split(";")[1] === "TemperaturaBoa" ? "Temperatura Boa" :
-                      temperatura.split(";")[1] === "TemperaturaAlta" ? "Temperatura Alta" :
-                      null
-                    )
+                    typeof temperatura === "string" && temperatura.split(";")[1] === "TemperaturaBaixa" ? "Temperatura Baixa" :
+                    typeof temperatura === "string" && temperatura.split(";")[1] === "TemperaturaBoa" ? "Temperatura Boa" :
+                    typeof temperatura === "string" && temperatura.split(";")[1] === "TemperaturaAlta" ? "Temperatura Alta" :
+                    "Sem dispositivos na região"
                   }
                 </CardConsultaTitulo>
                 <CardConsultaSubtitulo>
-                  Temperatura da região
+                  {temperatura ? ("Temperatura da região:") : ("")}
                 </CardConsultaSubtitulo>
                 <CardConsultaDescricao>
-                  Nivel de temperatura:{" "}
-                  {temperatura && temperatura.split(";")[0]} ℃
+                {temperatura ? (
+                    <>
+                      Temperatura: {temperatura && typeof temperatura === "string" &&  temperatura.split(";")[0]} °C
+                    </>
+                  ) : (
+                    <span>Estamos chegando 🐙</span>
+                  )}
                 </CardConsultaDescricao>
               </CardConsulta>
             </div>

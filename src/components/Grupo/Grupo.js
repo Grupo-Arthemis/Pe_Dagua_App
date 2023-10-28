@@ -106,7 +106,7 @@ function Grupo() {
             <GrupSection01>
                 <GrupSection01Texto>
                     <GrupSection01H1>Conheça nosso time</GrupSection01H1> 
-                    <GrupSection01P>Descubra a equipe talentosa por trás do sistema 'Pé D'Água' que está empenhada em tornar nossa cidade mais segura e resiliente contra enchentes.</GrupSection01P>
+                    <GrupSection01P>Descubra a equipe talentosa por trás do sistema Pé D'Água que está empenhada em tornar nossa cidade mais segura e resiliente contra enchentes.</GrupSection01P>
                 </GrupSection01Texto>
                 <GrupSection01Cards>
                 {integrantes.map((integrante, index) => (

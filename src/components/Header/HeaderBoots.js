@@ -124,7 +124,9 @@ function OffcanvasExample() {
     return (
       <Navbar expand="sm" style={{ backgroundColor: '#fff' }}>
         <Container fluid>
-          <img src={Logo} alt='Logo com ondinhas' style={{ height: "50px" }} />
+          <a  href="#/">
+            <img src={Logo} alt='Logo com ondinhas' style={{ height: "50px", marginRight:"10px" }} />
+          </a>
           <PeDaguaTexto>pé d’água</PeDaguaTexto>
           <Navbar.Toggle aria-controls="offcanvasNavbar" onClick={handleToggleOffcanvas} />
           <Navbar.Offcanvas show={showOffcanvas} onHide={handleCloseOffcanvas} placement="end">

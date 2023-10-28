@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import React from "react";
 import ReactDOM from 'react-dom';
 
-import ProjetoFotoSala from '../../assets/Projeto-FotoSala.png';
-import ProjetoAreaAlagada from '../../assets/Projeto-AreaAlagada.png';
+import GuardaTech from '../../assets/GuardaChuvaTech.jpeg';
+import LemaNext from '../../assets/TemaNext.jpeg';
 
 import ProjetoRatingCards from './Projeto-RatingCards';
 
@@ -163,7 +163,7 @@ function Projeto() {
         <div className="Perguntas">
             <Titulo01 style={{color: "#5D5A88", margin:"2% 0"}}>Sobre o Projeto</Titulo01> 
             <ProjSection01 style={{backgroundColor: "#E8EFF7"}}>
-                <ProjImagem src={ProjetoFotoSala} alt="Foto da sala de aula" style={{gridArea:"1"}} />
+                <ProjImagem src={LemaNext} alt="Foto da sala de aula" style={{borderRadius:"10px"}} />
                 <ProjSection01Texto style={{gridArea:"1"}}>
                   <Subtitulo01 style={{color: "#5D5A88", margin:"2% 0"}}>Como tudo começou</Subtitulo01>
                   <Paragrafo01 style={{color: "#5D5A88", textAlign: "justify"}}>
@@ -176,7 +176,7 @@ function Projeto() {
                 <ProjSection01Texto>
                   <Subtitulo01 style={{color: "#5D5A88", margin:"2% 0"}}>Nosso Ajudante</Subtitulo01>
                   <Paragrafo01 style={{color: "#5D5A88", textAlign: "justify"}}>
-                  O <strong style={{fontWeight:"bold"}}> Guarda_Chuva </strong> é um dispositivo inteligente que faz parte do sistema Pé d’água de prevenção de desastres naturais. Ele mede a quantidade e a intensidade da chuva com um pluviômetro de báscula que se comunica via WiFi com outros aparelhos próximos. Assim, ele envia dados em tempo real para você se proteger das enchentes em São Paulo. 
+                  O <strong style={{fontWeight:"bold"}}> Guarda_Chuva </strong> é um dispositivo inteligente que faz parte do sistema Pé D’Água de prevenção de desastres naturais. Ele mede a quantidade e a intensidade da chuva com um pluviômetro de báscula que se comunica via WiFi com outros aparelhos próximos. Assim, ele envia dados em tempo real para você se proteger das enchentes em São Paulo. 
                   <br />
                   <br />
                   <br />
@@ -186,11 +186,11 @@ function Projeto() {
                 <MyModel style={{borderRadius:"20px"}} />
             </ProjSection02>
             <ProjSection01 style={{backgroundColor: "#E8EFF7"}}>
-                <ProjImagem src={ProjetoFotoSala} alt="Foto da sala de aula" />
+                <ProjImagem src={GuardaTech} alt="Foto da sala de aula" style={{borderRadius:"10px"}} />
                 <ProjSection01Texto>
                   <Subtitulo01 style={{color: "#5D5A88", margin:"2% 0"}}>Nossa missão</Subtitulo01>
                   <Paragrafo01 style={{color: "#5D5A88", textAlign: "justify"}}>
-                  Nosso compromisso é transformar nossa cidade em um ambiente mais inteligente e sustentável por meio de nosso projeto. <br /> <br /> Através da aplicação inovadora de tecnologia e ideias, estamos determinados a criar soluções tangíveis que melhorem a qualidade de vida dos cidadãos. Valorizamos a colaboração, a criatividade e a dedicação à causa.  <br /> <br />Nossa missão é pavimentar um caminho para um futuro mais promissor, onde cada passo conta na construção de uma comunidade mais eficiente e consciente do meio ambiente. Juntos, estamos impulsionando o progresso e o impacto positivo em nossa cidade.
+                  Nosso compromisso é <strong style={{fontWeight:"bold"}}> transformar nossa cidade em um ambiente mais inteligente e sustentável</strong> por meio de nosso projeto. <br /> <br /> Através da aplicação inovadora de tecnologia e ideias, estamos determinados a criar soluções tangíveis que melhorem a qualidade de vida dos cidadãos. Valorizamos a colaboração, a criatividade e a dedicação à causa.  <br /> <br />Nossa missão é pavimentar um caminho para um futuro mais promissor, onde cada passo conta na construção de uma comunidade mais eficiente e consciente do meio ambiente. Juntos, estamos impulsionando o progresso e o impacto positivo em nossa cidade.
                   </Paragrafo01>
                 </ProjSection01Texto>
             </ProjSection01>
