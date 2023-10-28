@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Pe_Dagua_App/static/css/main.b28d0c01.css",
-    "main.js": "/Pe_Dagua_App/static/js/main.93ba5976.js",
+    "main.js": "/Pe_Dagua_App/static/js/main.f282d2c1.js",
     "static/js/872.a4a9de45.chunk.js": "/Pe_Dagua_App/static/js/872.a4a9de45.chunk.js",
     "static/js/227.4fd8eb73.chunk.js": "/Pe_Dagua_App/static/js/227.4fd8eb73.chunk.js",
     "static/js/526.6908265d.chunk.js": "/Pe_Dagua_App/static/js/526.6908265d.chunk.js",
@@ -20,11 +20,11 @@
     "static/media/Foto (10).jpg": "/Pe_Dagua_App/static/media/Foto (10).7e517f5c025ea7cb3111.jpg",
     "static/media/Foto (7).jpg": "/Pe_Dagua_App/static/media/Foto (7).9d5304af75cf0fba76fa.jpg",
     "static/media/Foto-Carrossel-1.jpg": "/Pe_Dagua_App/static/media/Foto-Carrossel-1.5b99997e24003da8932f.jpg",
+    "static/media/SadEmoji.gif": "/Pe_Dagua_App/static/media/SadEmoji.4dceb540d78f7b4e8c17.gif",
     "static/media/Foto-Carrossel-3.jpg": "/Pe_Dagua_App/static/media/Foto-Carrossel-3.49fdfa4439673c7f29dd.jpg",
     "static/media/Foto-Carrossel-2.jpg": "/Pe_Dagua_App/static/media/Foto-Carrossel-2.39d20da40ae4fd22d324.jpg",
     "static/media/Foto (4).jpg": "/Pe_Dagua_App/static/media/Foto (4).012c0a2e123afe057872.jpg",
-    "static/media/Projeto-AreaAlagada.png": "/Pe_Dagua_App/static/media/Projeto-AreaAlagada.a6032b01f26363c7672a.png",
-    "static/media/Projeto-FotoSala.png": "/Pe_Dagua_App/static/media/Projeto-FotoSala.61c7c0aa944226263d92.png",
+    "static/media/GuardaChuvaTech.jpeg": "/Pe_Dagua_App/static/media/GuardaChuvaTech.272011488eeb2d9bb13a.jpeg",
     "static/media/3-UmidadeAlta.png": "/Pe_Dagua_App/static/media/3-UmidadeAlta.f7c08e77124e2d47a411.png",
     "static/media/2-UmidadeBoa.png": "/Pe_Dagua_App/static/media/2-UmidadeBoa.a9bfe420356aa279e114.png",
     "static/media/1-UmidadeBaixa.png": "/Pe_Dagua_App/static/media/1-UmidadeBaixa.8a4992c72dd4364e4db4.png",
@@ -37,6 +37,7 @@
     "static/media/Victor.png": "/Pe_Dagua_App/static/media/Victor.de7d90fb400bd07059b4.png",
     "static/media/Luan.png": "/Pe_Dagua_App/static/media/Luan.dee6500ed5a61859c19e.png",
     "static/media/Felipe.png": "/Pe_Dagua_App/static/media/Felipe.8da5a66011a763730b34.png",
+    "static/media/TemaNext.jpeg": "/Pe_Dagua_App/static/media/TemaNext.a5ae9cb4f34686783d80.jpeg",
     "static/media/4-ChuvaForte.png": "/Pe_Dagua_App/static/media/4-ChuvaForte.7875401fd8f3d0b05246.png",
     "static/media/1-SemChuva.png": "/Pe_Dagua_App/static/media/1-SemChuva.e82f4cc7e8f96f2a51fc.png",
     "static/media/2-ChuvaFraca.png": "/Pe_Dagua_App/static/media/2-ChuvaFraca.0138de3a41a4bbd4af01.png",
@@ -52,7 +53,7 @@
     "static/media/Planos-check-circle-2.svg": "/Pe_Dagua_App/static/media/Planos-check-circle-2.2e685f958c0ce2df60d3cc5ac033a72b.svg",
     "static/media/Planos-check-circle-1.svg": "/Pe_Dagua_App/static/media/Planos-check-circle-1.50150b2eb8278acb6c16f2f5ea0dfb06.svg",
     "main.b28d0c01.css.map": "/Pe_Dagua_App/static/css/main.b28d0c01.css.map",
-    "main.93ba5976.js.map": "/Pe_Dagua_App/static/js/main.93ba5976.js.map",
+    "main.f282d2c1.js.map": "/Pe_Dagua_App/static/js/main.f282d2c1.js.map",
     "872.a4a9de45.chunk.js.map": "/Pe_Dagua_App/static/js/872.a4a9de45.chunk.js.map",
     "227.4fd8eb73.chunk.js.map": "/Pe_Dagua_App/static/js/227.4fd8eb73.chunk.js.map",
     "526.6908265d.chunk.js.map": "/Pe_Dagua_App/static/js/526.6908265d.chunk.js.map",
@@ -62,6 +63,6 @@
   },
   "entrypoints": [
     "static/css/main.b28d0c01.css",
-    "static/js/main.93ba5976.js"
+    "static/js/main.f282d2c1.js"
   ]
 }
