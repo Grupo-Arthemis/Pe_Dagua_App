@@ -16,7 +16,7 @@
 
 ```diff
 -                                        ATENÇÃO                                         -
-Incluímos SAAS na página de SOBRE O GRUPO
+                         Incluímos SAAS na página de SOBRE O GRUPO
 
 ```
 
