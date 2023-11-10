@@ -1,0 +1,46 @@
+.GrupoSection01 {
+  padding: 5% 2%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  align-items: center;
+  gap: 10vh;
+}
+
+.GrupoSection01Texto {
+  gap: 2vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.GrupoSection01H1 {
+  color: #5d5a88;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: DM Sans;
+  font-size: clamp(2.188rem, 1.477rem + 1.894vw, 3.75rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.GrupoSection01P {
+  color: #9795b5;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: DM Sans;
+  font-size: clamp(0.75rem, 0.381rem + 0.985vw, 1.563rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: justify;
+}
+
+.GrupoSection01Cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2vw;
+}/*# sourceMappingURL=Grupo.css.map */

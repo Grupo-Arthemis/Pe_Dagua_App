@@ -2,59 +2,13 @@ import styled from 'styled-components';
 import GrupoCards from './Grupo-cards';
 import React from "react";
 
+import './Grupo.css';
+
 import FotoLuis from '../../assets/nossasFotos/Luis.png';
 import FotoJulia from '../../assets/nossasFotos/Julia.png';
 import FotoVictor from '../../assets/nossasFotos/Victor.png';
 import FotoFelipe from '../../assets/nossasFotos/Felipe.png';
 import FotoLuan from '../../assets/nossasFotos/Luan.png';
-
-const GrupSection01 = styled.div`
-  padding: 5% 2%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-  align-items: center;
-  gap: 10vh;
-`;
-
-const GrupSection01Texto = styled.div`
-  gap: 2vw;
-  display: flex;
-  flex-direction: column;
-`;
-
-const GrupSection01H1 = styled.h1`
-  color: #5d5a88;
-  text-align: center;
-  font-feature-settings: 'clig' off, 'liga' off;
-  font-family: DM Sans;
-  font-size: clamp(2.188rem, 1.477rem + 1.894vw, 3.75rem);
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-`;
-
-const GrupSection01P = styled.p`
-  color: #9795b5;
-  text-align: center;
-  font-feature-settings: 'clig' off, 'liga' off;
-  font-family: DM Sans;
-  font-size: clamp(0.75rem, 0.381rem + 0.985vw, 1.563rem);
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-align: justify;
-`;
-
-const GrupSection01Cards = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-  gap: 2vw;
-`;
-
 
 
 function Grupo() {
@@ -103,17 +57,17 @@ function Grupo() {
 
     return (
         <div className="Perguntas">
-            <GrupSection01>
-                <GrupSection01Texto>
-                    <GrupSection01H1>Conheça nosso time</GrupSection01H1> 
-                    <GrupSection01P>Descubra a equipe talentosa por trás do sistema Pé D'Água que está empenhada em tornar nossa cidade mais segura e resiliente contra enchentes.</GrupSection01P>
-                </GrupSection01Texto>
-                <GrupSection01Cards>
+            <div className='GrupoSection01'>
+                <div className='GrupoSection01Texto'>
+                    <h1 className='GrupoSection01H1'>Conheça nosso time</h1> 
+                    <p className='GrupoSection01P'>Descubra a equipe talentosa por trás do sistema Pé D'Água que está empenhada em tornar nossa cidade mais segura e resiliente contra enchentes.</p>
+                </div>
+                <div className='GrupoSection01Cards'>
                 {integrantes.map((integrante, index) => (
                         <GrupoCards key={index} Foto={integrante.Foto} Nome={integrante.Nome} Idade={integrante.Idade} Descricao={integrante.Descricao} Emoji={integrante.Emoji} Facebook={integrante.Facebook} Twitter={integrante.Twitter} Instagram={integrante.Instagram} Linkedin={integrante.Linkedin}/>
                     ))}
-                </GrupSection01Cards>
-            </GrupSection01>
+                </div>
+            </div>
         </div>
     );
 }
