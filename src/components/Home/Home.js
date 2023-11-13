@@ -182,7 +182,7 @@ function Home() {
           <Section02Video>
             <ReactPlayer
               controls={true}
-              url="https://youtu.be/9QY3zcMDWgY"
+              url="https://youtu.be/fdHZYMYNRMk"
               width="100%"
               height="100%"
             />
