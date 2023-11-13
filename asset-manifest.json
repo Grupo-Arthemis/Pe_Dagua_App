@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Pe_Dagua_App/static/css/main.b28d0c01.css",
-    "main.js": "/Pe_Dagua_App/static/js/main.f282d2c1.js",
+    "main.css": "/Pe_Dagua_App/static/css/main.9bc5bfbd.css",
+    "main.js": "/Pe_Dagua_App/static/js/main.82a5a3e1.js",
     "static/js/872.a4a9de45.chunk.js": "/Pe_Dagua_App/static/js/872.a4a9de45.chunk.js",
     "static/js/227.4fd8eb73.chunk.js": "/Pe_Dagua_App/static/js/227.4fd8eb73.chunk.js",
     "static/js/526.6908265d.chunk.js": "/Pe_Dagua_App/static/js/526.6908265d.chunk.js",
@@ -52,8 +52,8 @@
     "index.html": "/Pe_Dagua_App/index.html",
     "static/media/Planos-check-circle-2.svg": "/Pe_Dagua_App/static/media/Planos-check-circle-2.2e685f958c0ce2df60d3cc5ac033a72b.svg",
     "static/media/Planos-check-circle-1.svg": "/Pe_Dagua_App/static/media/Planos-check-circle-1.50150b2eb8278acb6c16f2f5ea0dfb06.svg",
-    "main.b28d0c01.css.map": "/Pe_Dagua_App/static/css/main.b28d0c01.css.map",
-    "main.f282d2c1.js.map": "/Pe_Dagua_App/static/js/main.f282d2c1.js.map",
+    "main.9bc5bfbd.css.map": "/Pe_Dagua_App/static/css/main.9bc5bfbd.css.map",
+    "main.82a5a3e1.js.map": "/Pe_Dagua_App/static/js/main.82a5a3e1.js.map",
     "872.a4a9de45.chunk.js.map": "/Pe_Dagua_App/static/js/872.a4a9de45.chunk.js.map",
     "227.4fd8eb73.chunk.js.map": "/Pe_Dagua_App/static/js/227.4fd8eb73.chunk.js.map",
     "526.6908265d.chunk.js.map": "/Pe_Dagua_App/static/js/526.6908265d.chunk.js.map",
@@ -62,7 +62,7 @@
     "787.cfdb8f9f.chunk.js.map": "/Pe_Dagua_App/static/js/787.cfdb8f9f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b28d0c01.css",
-    "static/js/main.f282d2c1.js"
+    "static/css/main.9bc5bfbd.css",
+    "static/js/main.82a5a3e1.js"
   ]
 }
