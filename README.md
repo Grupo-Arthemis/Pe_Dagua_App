@@ -16,7 +16,7 @@
 
 ```diff
 -                                        ATENÇÃO                                         -
-A pagina de consulta ainda está em desenvolvimento, sendo o tema principal para a sprint 4
+                         Incluímos SAAS na página de SOBRE O GRUPO
 
 ```
 
